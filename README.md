@@ -1,7 +1,7 @@
 
 # RetroTerm.NET
 
-![RetroTerm.NET](banner.png)
+![RetroTerm.NET](screenshots/slides1.gif)
 
 A nostalgic terminal emulator with a retro DOS-inspired interface, providing modern SSH connectivity with classic aesthetics.
 
