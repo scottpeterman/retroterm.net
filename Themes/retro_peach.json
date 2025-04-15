@@ -1,0 +1,39 @@
+{
+    "Name": "Navy & Orange",
+    "Description": "Navy blue with orange accents inspired by classic utility software",
+    "Author": "SSH Terminal App",
+    "Version": "1.0",
+    "BaseTheme": "dark",
+    "UI": {
+      "Background": "#000033",
+      "Text": "#FFFFFF",
+      "InputText": "#FFFFFF",
+      "ButtonBackground": "#0055AA",
+      "ButtonText": "#FFFFFF",
+      "ButtonBorder": "#FFFFFF",
+      "Highlight": "#FF9900",
+      "Border": "#FFFFFF",
+      "StatusBarBackground": "#000033",
+      "StatusBarText": "#FFFFFF",
+      "MenuBackground": "#000033",
+      "MenuText": "#FFFFFF",
+      "MenuHighlight": "#FF9900",
+      "MenuHighlightText": "#000000",
+      "HotkeyText": "#FF9900",
+      "ConnectedButtonBackground": "#FF9900",
+      "ConnectedButtonText": "#000000",
+      "DisconnectedButtonBackground": "#0055AA",
+      "DisconnectedButtonText": "#FFFFFF",
+      "FunctionKeyText": "#FF9900",
+      "FunctionKeyDescriptionText": "#FFFFFF"
+    },
+    "Terminal": {
+      "Background": "#000033",
+      "Foreground": "#FFFFFF",
+      "Cursor": "#FF9900",
+      "CursorAccent": "#000033",
+      "Selection": "#0055AA",
+      "ScrollbarBackground": "#000033",
+      "ScrollbarThumb": "#0055AA"
+    }
+  }

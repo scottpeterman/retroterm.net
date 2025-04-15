@@ -1,0 +1,39 @@
+{
+    "Name": "Nord Hybrid",
+    "Description": "Arctic Nord with dark UI and light terminal",
+    "Author": "RetroTerm.NET",
+    "Version": "1.0",
+    "BaseTheme": "dark",
+    "UI": {
+      "Background": "#2e3440",
+      "Text": "#d8dee9",
+      "InputText": "#eceff4",
+      "ButtonBackground": "#3b4252",
+      "ButtonText": "#e5e9f0",
+      "ButtonBorder": "#4c566a",
+      "Highlight": "#88c0d0",
+      "Border": "#4c566a",
+      "StatusBarBackground": "#3b4252",
+      "StatusBarText": "#e5e9f0",
+      "MenuBackground": "#3b4252",
+      "MenuText": "#e5e9f0",
+      "MenuHighlight": "#81a1c1",
+      "MenuHighlightText": "#2e3440",
+      "HotkeyText": "#bf616a",
+      "ConnectedButtonBackground": "#bf616a",
+      "ConnectedButtonText": "#eceff4",
+      "DisconnectedButtonBackground": "#3b4252",
+      "DisconnectedButtonText": "#e5e9f0",
+      "FunctionKeyText": "#bf616a",
+      "FunctionKeyDescriptionText": "#d8dee9"
+    },
+    "Terminal": {
+      "Background": "#eceff4",
+      "Foreground": "#2e3440",
+      "Cursor": "#5e81ac",
+      "CursorAccent": "#eceff4",
+      "Selection": "#d8dee9",
+      "ScrollbarBackground": "#e5e9f0",
+      "ScrollbarThumb": "#81a1c1"
+    }
+  }

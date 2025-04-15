@@ -1,0 +1,39 @@
+{
+    "Name": "1-2-3",
+    "Description": "Inspired by the iconic Lotus 1-2-3 spreadsheet",
+    "Author": "SSH Terminal App",
+    "Version": "1.0",
+    "BaseTheme": "dark",
+    "UI": {
+      "Background": "#000000",
+      "Text": "#FFFFFF",
+      "InputText": "#FFFFFF",
+      "ButtonBackground": "#000000",
+      "ButtonText": "#FFFFFF",
+      "ButtonBorder": "#FFFFFF",
+      "Highlight": "#000080",
+      "Border": "#FFFFFF",
+      "StatusBarBackground": "#000080",
+      "StatusBarText": "#FFFFFF",
+      "MenuBackground": "#000000",
+      "MenuText": "#FFFFFF",
+      "MenuHighlight": "#000080",
+      "MenuHighlightText": "#FFFFFF",
+      "HotkeyText": "#00FFFF",
+      "ConnectedButtonBackground": "#AA0000",
+      "ConnectedButtonText": "#FFFFFF",
+      "DisconnectedButtonBackground": "#000080",
+      "DisconnectedButtonText": "#FFFFFF",
+      "FunctionKeyText": "#00FFFF",
+      "FunctionKeyDescriptionText": "#FFFFFF"
+    },
+    "Terminal": {
+      "Background": "#000000",
+      "Foreground": "#FFFFFF",
+      "Cursor": "#FFFFFF",
+      "CursorAccent": "#000000",
+      "Selection": "#000080",
+      "ScrollbarBackground": "#000000",
+      "ScrollbarThumb": "#FFFFFF"
+    }
+  }

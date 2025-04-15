@@ -1,0 +1,39 @@
+{
+    "Name": "Amiga Workbench",
+    "Description": "Classic Amiga Workbench interface",
+    "Author": "SSH Terminal App",
+    "Version": "1.0",
+    "BaseTheme": "light",
+    "UI": {
+      "Background": "#AAAAAA",
+      "Text": "#000000",
+      "InputText": "#000000",
+      "ButtonBackground": "#DDDDDD",
+      "ButtonText": "#000000",
+      "ButtonBorder": "#000000",
+      "Highlight": "#0055AA",
+      "Border": "#000000",
+      "StatusBarBackground": "#AAAAAA",
+      "StatusBarText": "#000000",
+      "MenuBackground": "#AAAAAA",
+      "MenuText": "#000000",
+      "MenuHighlight": "#0055AA",
+      "MenuHighlightText": "#FFFFFF",
+      "HotkeyText": "#FF0000",
+      "ConnectedButtonBackground": "#0055AA",
+      "ConnectedButtonText": "#FFFFFF",
+      "DisconnectedButtonBackground": "#DDDDDD",
+      "DisconnectedButtonText": "#000000",
+      "FunctionKeyText": "#FF0000",
+      "FunctionKeyDescriptionText": "#000000"
+    },
+    "Terminal": {
+      "Background": "#FFFFFF",
+      "Foreground": "#000000",
+      "Cursor": "#000000",
+      "CursorAccent": "#FFFFFF",
+      "Selection": "#0055AA",
+      "ScrollbarBackground": "#DDDDDD",
+      "ScrollbarThumb": "#AAAAAA"
+    }
+  }

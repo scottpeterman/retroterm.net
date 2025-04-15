@@ -1,0 +1,39 @@
+{
+    "Name": "Solarized Dark",
+    "Description": "Ethan Schoonover's popular Solarized Dark color scheme",
+    "Author": "RetroTerm.NET",
+    "Version": "1.0",
+    "BaseTheme": "dark",
+    "UI": {
+      "Background": "#002b36",
+      "Text": "#839496",
+      "InputText": "#93a1a1",
+      "ButtonBackground": "#073642",
+      "ButtonText": "#839496",
+      "ButtonBorder": "#586e75",
+      "Highlight": "#2aa198",
+      "Border": "#586e75",
+      "StatusBarBackground": "#073642",
+      "StatusBarText": "#839496",
+      "MenuBackground": "#073642",
+      "MenuText": "#839496",
+      "MenuHighlight": "#2aa198",
+      "MenuHighlightText": "#002b36",
+      "HotkeyText": "#cb4b16",
+      "ConnectedButtonBackground": "#dc322f",
+      "ConnectedButtonText": "#fdf6e3",
+      "DisconnectedButtonBackground": "#073642",
+      "DisconnectedButtonText": "#839496",
+      "FunctionKeyText": "#cb4b16",
+      "FunctionKeyDescriptionText": "#839496"
+    },
+    "Terminal": {
+      "Background": "#002b36",
+      "Foreground": "#839496",
+      "Cursor": "#93a1a1",
+      "CursorAccent": "#002b36",
+      "Selection": "#073642",
+      "ScrollbarBackground": "#073642",
+      "ScrollbarThumb": "#586e75"
+    }
+  }

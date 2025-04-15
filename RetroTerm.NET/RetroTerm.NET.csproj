@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\SshTerminalComponent\SshTerminalComponent.csproj" />
+    <ProjectReference Include="..\SessionNavigatorControl\SessionNavigatorControl.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TreeViewAdv" Version="1.7.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>

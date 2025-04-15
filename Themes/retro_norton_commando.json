@@ -1,0 +1,39 @@
+{
+  "Name": "Norton Commander",
+  "Description": "Inspired by the classic Norton Commander file manager",
+  "Author": "SSH Terminal App",
+  "Version": "1.0",
+  "BaseTheme": "dark",
+  "UI": {
+    "Background": "#0000AA",
+    "Text": "#FFFFFF",
+    "InputText": "#FFFF55",
+    "ButtonBackground": "#55AAAA",
+    "ButtonText": "#000000",
+    "ButtonBorder": "#000000",
+    "Highlight": "#55AAAA",
+    "Border": "#FFFFFF",
+    "StatusBarBackground": "#55AAAA",
+    "StatusBarText": "#000000",
+    "MenuBackground": "#55AAAA",
+    "MenuText": "#000000",
+    "MenuHighlight": "#FFFFFF",
+    "MenuHighlightText": "#000000",
+    "HotkeyText": "#FFFF55",
+    "ConnectedButtonBackground": "#FF5555",
+    "ConnectedButtonText": "#FFFFFF",
+    "DisconnectedButtonBackground": "#55AAAA",
+    "DisconnectedButtonText": "#000000",
+    "FunctionKeyText": "#FFFF55",
+    "FunctionKeyDescriptionText": "#FFFFFF"
+  },
+  "Terminal": {
+    "Background": "#0000AA",
+    "Foreground": "#FFFFFF",
+    "Cursor": "#FFFFFF",
+    "CursorAccent": "#0000AA",
+    "Selection": "#55AAAA",
+    "ScrollbarBackground": "#0000AA",
+    "ScrollbarThumb": "#FFFFFF"
+  }
+}

@@ -1,0 +1,39 @@
+{
+    "Name": "Gruvbox Hybrid",
+    "Description": "Retro groove with dark UI and light terminal",
+    "Author": "RetroTerm.NET",
+    "Version": "1.0",
+    "BaseTheme": "dark",
+    "UI": {
+      "Background": "#282828",
+      "Text": "#ebdbb2",
+      "InputText": "#fbf1c7",
+      "ButtonBackground": "#3c3836",
+      "ButtonText": "#ebdbb2",
+      "ButtonBorder": "#504945",
+      "Highlight": "#83a598",
+      "Border": "#504945",
+      "StatusBarBackground": "#3c3836",
+      "StatusBarText": "#ebdbb2",
+      "MenuBackground": "#3c3836",
+      "MenuText": "#ebdbb2",
+      "MenuHighlight": "#83a598",
+      "MenuHighlightText": "#282828",
+      "HotkeyText": "#fb4934",
+      "ConnectedButtonBackground": "#cc241d",
+      "ConnectedButtonText": "#fbf1c7",
+      "DisconnectedButtonBackground": "#3c3836",
+      "DisconnectedButtonText": "#ebdbb2",
+      "FunctionKeyText": "#fb4934",
+      "FunctionKeyDescriptionText": "#ebdbb2"
+    },
+    "Terminal": {
+      "Background": "#fbf1c7",
+      "Foreground": "#3c3836",
+      "Cursor": "#d65d0e",
+      "CursorAccent": "#fbf1c7",
+      "Selection": "#ebdbb2",
+      "ScrollbarBackground": "#ebdbb2",
+      "ScrollbarThumb": "#7c6f64"
+    }
+  }

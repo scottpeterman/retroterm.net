@@ -1,0 +1,39 @@
+{
+  "Name": "IBM DOS Green",
+  "Description": "Classic green monochrome CRT terminal theme",
+  "Author": "SSH Terminal App",
+  "Version": "1.0",
+  "BaseTheme": "dark",
+  "UI": {
+    "Background": "#000000",
+    "Text": "#00FF00",
+    "InputText": "#00FF00",
+    "ButtonBackground": "#000000",
+    "ButtonText": "#00FF00",
+    "ButtonBorder": "#00FF00",
+    "Highlight": "#00FF00",
+    "Border": "#00FF00",
+    "StatusBarBackground": "#000000",
+    "StatusBarText": "#00FF00",
+    "MenuBackground": "#000000",
+    "MenuText": "#00FF00",
+    "MenuHighlight": "#002200",
+    "MenuHighlightText": "#00FF00",
+    "HotkeyText": "#00FF00",
+    "ConnectedButtonBackground": "#006600",
+    "ConnectedButtonText": "#000000",
+    "DisconnectedButtonBackground": "#000000",
+    "DisconnectedButtonText": "#00FF00",
+    "FunctionKeyText": "#44FF44",
+    "FunctionKeyDescriptionText": "#00FF00"
+  },
+  "Terminal": {
+    "Background": "#000000",
+    "Foreground": "#00FF00",
+    "Cursor": "#00FF00",
+    "CursorAccent": "#000000",
+    "Selection": "#004400",
+    "ScrollbarBackground": "#000000",
+    "ScrollbarThumb": "#00FF00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Test App",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/SshTerminalComponent.TestApp/bin/Debug/net8.0-windows/SshTerminalComponent.TestApp.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/SshTerminalComponent.TestApp",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+    "Name": "PC Tools Deluxe",
+    "Description": "Classic PC Tools Deluxe file manager interface",
+    "Author": "SSH Terminal App",
+    "Version": "1.0",
+    "BaseTheme": "dark",
+    "UI": {
+      "Background": "#000080",
+      "Text": "#FFFFFF",
+      "InputText": "#FFFF00",
+      "ButtonBackground": "#00AA00",
+      "ButtonText": "#000000",
+      "ButtonBorder": "#FFFFFF",
+      "Highlight": "#00AA00",
+      "Border": "#FFFFFF",
+      "StatusBarBackground": "#0000AA",
+      "StatusBarText": "#FFFFFF",
+      "MenuBackground": "#000080",
+      "MenuText": "#FFFFFF",
+      "MenuHighlight": "#00AA00",
+      "MenuHighlightText": "#000000",
+      "HotkeyText": "#FFFF00",
+      "ConnectedButtonBackground": "#AA0000",
+      "ConnectedButtonText": "#FFFFFF",
+      "DisconnectedButtonBackground": "#00AA00",
+      "DisconnectedButtonText": "#000000",
+      "FunctionKeyText": "#FFFF00",
+      "FunctionKeyDescriptionText": "#FFFFFF"
+    },
+    "Terminal": {
+      "Background": "#000080",
+      "Foreground": "#FFFFFF",
+      "Cursor": "#00FF00",
+      "CursorAccent": "#000000",
+      "Selection": "#00AA00",
+      "ScrollbarBackground": "#000080",
+      "ScrollbarThumb": "#00AA00"
+    }
+  }
