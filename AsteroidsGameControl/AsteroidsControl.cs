@@ -139,7 +139,7 @@ protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         using (Brush textBrush = new SolidBrush(gameColor))
         {
             g.DrawString($"{score:00000}", gameFont, textBrush, 10, 10);
-            g.DrawString($"SHIPS {lives}", gameFont, textBrush, 10, 30);
+            g.DrawString($"SHIPS {lives}", gameFont, textBrush, 10, 50);
             
             // Draw messages based on game state
             if (state == GameState.WAITING)

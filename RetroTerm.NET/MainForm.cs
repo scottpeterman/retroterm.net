@@ -16,7 +16,7 @@ using System.Reflection;
 using Microsoft.Win32;
 // Win32 API declarations
 
-
+using AsteroidsGameControl; // Add this line with your other using statements
 namespace RetroTerm.NET
 {
     
@@ -1327,7 +1327,8 @@ private void AddFunctionKeyLabels(FlowLayoutPanel keyFlow)
             terminalMenu.DropDownItems.Add(CreateMenuItem("Connect", 'C', ConnectButton_Click));
             terminalMenu.DropDownItems.Add(CreateMenuItem("Disconnect", 'D', DisconnectCurrentTab_Click));
             terminalMenu.DropDownItems.Add(new ToolStripSeparator());
-            
+            terminalMenu.DropDownItems.Add(CreateMenuItem("Blasteroids", 'B', LaunchBlasteroids_Click));
+            terminalMenu.DropDownItems.Add(new ToolStripSeparator());
             // Modem sound toggle
             ToolStripMenuItem soundMenuItem = CreateMenuItem("Modem Sound", 'M', ToggleModemSound);
             soundMenuItem.Checked = settingsManager.EnableModemSound;
@@ -1393,7 +1394,97 @@ private void AddFunctionKeyLabels(FlowLayoutPanel keyFlow)
     ResetThemesToDefaults();
 }
 
-
+private void LaunchBlasteroids_Click(object sender, EventArgs e)
+{
+    try
+    {
+        // Create a new form to host the Asteroids game
+        Form gameForm = new Form
+        {
+            Text = "Blasteroids - RetroTerm.NET",
+            FormBorderStyle = FormBorderStyle.Sizable,
+            Size = new Size(850, 650),
+            StartPosition = FormStartPosition.CenterParent,
+            MinimumSize = new Size(400, 300),
+            Icon = this.Icon // Use the same icon as the main form if available
+        };
+        
+        // Apply current theme colors to the game form
+        if (themeManager?.CurrentTheme != null)
+        {
+            gameForm.BackColor = Theme.HexToColor(themeManager.CurrentTheme.UI.Background);
+        }
+        else
+        {
+            gameForm.BackColor = Color.Black;
+        }
+        
+        // Create the Asteroids control
+        AsteroidsControl asteroidsControl = new AsteroidsControl();
+        
+        // Set the game color to match the current theme
+        if (themeManager?.CurrentTheme != null)
+        {
+            // Use the theme's accent color or text color for the game
+            asteroidsControl.GameColor = Theme.HexToColor(themeManager.CurrentTheme.UI.Text);
+        }
+        else
+        {
+            asteroidsControl.GameColor = Color.Cyan; // Default fallback
+        }
+        
+        asteroidsControl.Dock = DockStyle.Fill;
+        
+        // Add event handlers for score/lives updates if you want to show them in the title
+        asteroidsControl.ScoreChanged += (s, score) => {
+            gameForm.Text = $"Blasteroids - Score: {score:00000}";
+        };
+        
+        asteroidsControl.GameStateChanged += (s, state) => {
+            switch (state)
+            {
+                case GameState.GAME_OVER:
+                    gameForm.Text = $"Blasteroids - GAME OVER - Score: {asteroidsControl.Score:00000}";
+                    break;
+                case GameState.PAUSED:
+                    gameForm.Text = $"Blasteroids - PAUSED - Score: {asteroidsControl.Score:00000}";
+                    break;
+                case GameState.RUNNING:
+                    gameForm.Text = $"Blasteroids - Score: {asteroidsControl.Score:00000}";
+                    break;
+                default:
+                    gameForm.Text = "Blasteroids - RetroTerm.NET";
+                    break;
+            }
+        };
+        
+        // Add the control to the form
+        gameForm.Controls.Add(asteroidsControl);
+        
+        // Make sure the control can receive keyboard input
+        gameForm.KeyPreview = false;
+        asteroidsControl.Focus();
+        
+        // Handle form closing to ensure proper cleanup
+        gameForm.FormClosing += (s, args) => {
+            asteroidsControl.Dispose();
+        };
+        
+        // Show the game form
+        gameForm.Show();
+        
+        // Focus the asteroids control so it can receive input immediately
+        asteroidsControl.Focus();
+        
+        UpdateStatus("Blasteroids launched - Have fun!");
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show($"Error launching Blasteroids: {ex.Message}", 
+            "Launch Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        UpdateStatus("Failed to launch Blasteroids");
+    }
+}
 // Add this implementation method with your other methods
 private void ResetThemesToDefaults()
 {

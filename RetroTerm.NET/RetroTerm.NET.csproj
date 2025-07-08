@@ -3,6 +3,8 @@
   <ItemGroup>
     <ProjectReference Include="..\SshTerminalComponent\SshTerminalComponent.csproj" />
     <ProjectReference Include="..\SessionNavigatorControl\SessionNavigatorControl.csproj" />
+      <ProjectReference Include="..\AsteroidsGameControl\AsteroidsGameControl.csproj" />
+
   </ItemGroup>
 
   <ItemGroup>

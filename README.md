@@ -1,4 +1,3 @@
-
 # RetroTerm.NET
 
 ![RetroTerm.NET](screenshots/slides1.gif)
@@ -36,18 +35,55 @@ A nostalgic terminal emulator with a retro DOS-inspired interface, providing mod
   - Quick connect from saved sessions
   - Secure password storage
 
+## Easter Eggs
+
+- **Blasteroids**: A classic Asteroids-style game accessible via Terminal → Blasteroids
+  - Vector graphics that match your current theme
+  - Classic arcade physics and gameplay
+  - Play while keeping your terminal sessions active
+
 ## Requirements
 
 - Windows 10 or higher
-- .NET 6.0 or higher
+- .NET 6.0 or higher (or use the self-contained build)
 - WebView2 Runtime
 - Monospace font (Perfect DOS VGA 437 recommended for authentic experience)
 
 ## Installation
 
+### Option 1: Pre-built Release
 1. Download the latest release from the [Releases](https://github.com/scottpeterman/RetroTerm.NET/releases) page
 2. Extract all files to a location of your choice
 3. Run RetroTerm.NET.exe
+
+**Note**: Since RetroTerm.NET is not code-signed, Windows may show a SmartScreen warning:
+1. Click "More info" when the warning appears
+2. Click "Run anyway" to proceed
+3. This is normal for open-source applications without expensive code signing certificates
+
+### Option 2: Build from Source
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/scottpeterman/retroterm.net.git
+   cd retroterm.net
+   ```
+
+2. Build a self-contained single-file executable:
+   ```bash
+   dotnet publish RetroTerm.NET/RetroTerm.NET.csproj -c Release -r win-x64 --self-contained -p:PublishSingleFile=true
+   ```
+
+3. The executable will be created at:
+   ```
+   RetroTerm.NET/bin/Release/net8.0-windows/win-x64/publish/RetroTerm.NET.exe
+   ```
+
+4. Copy the executable to your desired location and run it
+
+**Build Requirements for Source:**
+- .NET 8.0 SDK
+- Windows 10 or higher
+- Visual Studio 2022 or VS Code (optional, for development)
 
 ## Getting Started
 
@@ -221,11 +257,18 @@ Sample theme JSON structure:
 
 RetroTerm.NET is built with:
 
-- C# / .NET 6.0 (Windows Forms)
+- C# / .NET 8.0 (Windows Forms)
 - WebView2 for hosting the terminal emulation
 - xterm.js for terminal rendering and handling
 - SSH.NET for SSH connectivity
 - YamlDotNet for configuration file handling
+
+### Building from Source
+
+1. Ensure you have .NET 8.0 SDK installed
+2. Clone the repository
+3. Build using the command above, or open in Visual Studio and build normally
+4. The solution contains multiple projects that are automatically included in the main build
 
 ## About
 
@@ -238,4 +281,4 @@ GitHub: [github.com/scottpeterman/retroterm.net](https://github.com/scottpeterma
 
 ## License
 
-MIT - see Licens file
+MIT - see License file
